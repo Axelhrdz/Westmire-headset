@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+body{
+    /*background-image: linear-gradient(to left bottom, #fff3c2, #ffeed7, #fff1f2, #fff8ff, #ffffff);*/
+    background-image: linear-gradient(to right bottom, #fefedf, #fff9e8, #fff9f8, #fffcff, #ffffff);
+    
+    display: flex;
+    flex-direction: column;
+    font-family: Poppins;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.header-container{
+    display: flex;
+    justify-content: flex-start;
+    & img{
+        width: 1.5rem;
+    }
+}
+
+.header-container:hover{
+    & h1, img{
+        cursor: pointer;
+    }
+}
+
+.first-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    & p{
+        font-size: 4rem;
+    }
+
+    & img{
+        width: 400px;
+    }
+}
+
+.botones{
+    display: flex;
+    justify-content: flex-start;
+    gap: 3rem;
+    margin-left: 250px;
+    
+    & button{   
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+
+    & .boton-1{
+        font-weight: bold;
+        width: 200px;
+        height: 60px;
+        background-color: #32C1FF;
+        color: #FFF;
+    }
+        & .boton-1:hover{
+            background-color: black;
+            color: white;
+            transition: 0.4s;
+        }
+
+    & .boton-2{
+        background-color: #afa9a969;
+        font-weight: 300;
+        width: 200px;
+        height: 60px;
+    }
+        & .boton-2:hover{
+            background-color: white;
+            color: orange;
+            transition: 0.4s;
+        }
+}
+
+.boton-2{
+    background-color: #afa9a969;
+    border: 1px;
+    font-weight: 300;
+}
+
+/*Second section*/
+.second-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    gap: 1rem;
+
+    & img{
+        width: 450px;
+        border-radius: 0 50px 0 0;
+        /*box-shadow: 5px 5px 40px #717171;*/
+    }
+}
+
+.text-item{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 16pt;
+    font-weight: 300;
+
+    & h2{
+        font-weight: 300;
+    }
+
+    & p{
+        width: 80%;
+    }
+}
+
+/*Third section*/
+.category-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    & .title{
+        font-size: 30pt;
+        font-weight: 300;
+    }
+
+    & .cards{
+        display: flex;
+        gap: 2rem;
+    }
+
+    & button {
+        width: 150px;
+        height: 50px;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+    }
+
+    & button:hover{
+        background-color: white;
+        color: orange;
+        transition: 0.4s;
+    }
+
+    
+}
+
+.single-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFF;
+    padding: 2rem;
+    border-radius: 0 70px 0 70px;
+    & img{
+        border-radius: 0 50px 0 0;
+    }
+    & p{
+        margin-top: -0.3rem;
+        font-weight: 300;
+    }
+}
+
+.support-container{
+    display: flex;
+    justify-content: center;
+    
+    gap: 9rem;
+
+    & img{
+        border-radius: 0 100px 0 0;
+        /*box-shadow: 5px 5px 40px #717171;*/
+    }
+}
+
+.info{
+    & h2{
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+
+    & .parrafo{
+        font-size: 1.7rem;
+        font-weight: 300;
+    }
+
+    & h3{
+        padding-top: 6rem;
+        font-size: 1.8rem;
+    }
+
+    & .locations{
+        font-weight: 300;
+        font-size: 1.4rem;
+    }
+}
+
+/*Fourth section*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-top: 20rem;
+    margin-bottom: 5rem;
+}
+
+.foot{
+    & h3{
+        font-size: 26pt;
+    }
+
+    & p{
+        font-size: 1.3rem;
+    }
+
+    & h4{
+        font-size: 1.6rem;
+    }
+
+    & .foot-email{
+        font-size: 1.3rem;
+        color: #2874A6;
+        font-weight: bold;
+    }
+
+    & .foot-email:hover{
+        color: #DAF7A6;
+        transition: 0.4s;
+        background-color: #464646;
+        
+    }
+}
+
+
+
+/*Media queries // EXTRA SMALL devices------------------------------------*/
+
+@media only screen and (max-width: 360px){
+    body{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .header-container{
+        padding-left: 1rem;
+        & h1{
+            font-size: 1rem;
+        }
+    }
+
+    .first-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 3em;
+        & p{
+            font-size: 2rem;
+        }
+
+        & img{
+            width: 300px;
+        }
+    }
+
+    .botones{
+        flex-direction: column;
+        margin-top: 7em;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        & button{
+            font-size: 1.3rem;
+        }
+
+        & .boton-1{
+            width: 200px;
+            height: 60px;
+        }
+        & .boton-2{
+            width: 200px;
+            height: 60px;
+        }
+    }
+
+    .second-container{
+        flex-direction: column;
+        & img{
+            display: none;
+        }
+
+        & .text-item{
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .cards{
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .support-container{
+        flex-direction: column;
+        text-align: center;
+        & img{
+            display: none;
+        }
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*Media queries //  SMALL devices------------------------------------*/
+@media only screen and (min-width: 360px){
+    body{
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+
+    .header-container{
+        margin-left: 2rem;
+        & h1{
+            font-size: 1.2rem;
+        }
+    }
+
+    .first-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 3em;
+        & p{
+            font-size: 2.5rem;
+        }
+
+        & img{
+            width: 350px;
+        }
+    }
+
+    .botones{
+        flex-direction: column;
+        margin-top: 7em;
+        margin-left: 0;
+        justify-content: center;
+        align-items: center;
+        & button{
+            font-size: 1.3rem;
+        }
+
+        & .boton-1{
+            width: 200px;
+            height: 60px;
+        }
+        & .boton-2{
+            width: 200px;
+            height: 60px;
+        }
+    }
+
+    .second-container{
+        flex-direction: column;
+        & img{
+            display: none;
+        }
+
+        & .text-item{
+            width: 100vw;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .title{
+        text-align: center;
+    }
+
+    .cards{
+        flex-direction: column;
+        width: 100vw;
+    }
+
+    .support-container{
+        flex-direction: column;
+        text-align: center;
+        & img{
+            display: none;
+        }
+    }
+
+    .footer{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
+
+/*Media queries // MEDIUM DEVICES devices------------------------------------*/
+@media only screen and (min-width: 768px){
+    .header-container{
+        & h1{
+            font-size: 1.5rem;
+        }
+    }
+
+    .first-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+         
+        & p{
+            font-size: 3rem;
+        }
+    
+        & img{
+            width: 390px;
+        }
+    }
+
+    .second-container{
+        text-align: center;
+    }
+
+    .cards{
+        width: 100vw;
+        & img{
+            width: 400px;
+        }
+
+        & h2{
+            font-size: 2rem;
+        }
+
+        & p{
+            font-size: 1.5rem;
+        }
+    }
+
+    .text-item{
+        & h2{
+            font-size: 2.5rem;
+        }
+        & p{
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+
+/*Media queries // EXTRA LARGE devices------------------------------------*/
+@media only screen and (min-width: 1200px){
+    body{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+
+    .header-container{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .first-container{
+        & p{
+            font-size: 4rem;
+        }
+
+        & img{
+            width: 400px;
+        }
+    }
+
+    .botones{
+        flex-direction: row;
+        justify-content: center;
+
+        & button{
+            font-size: 1.5rem;
+        }
+        & .boton-1{
+            width: 200px;
+            height: 60px;
+        }
+
+        & .boton-2{
+            width: 200px;
+            height: 60px;
+        }
+    }
+
+    .second-container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: space;
+        width: 100%;
+        gap: 12rem;
+        & img{
+            display: inline-block;
+        }
+
+       & .text-item{
+        width: 40%;
+       }
+
+       & h2{
+        align-self: self-start;
+        font-size: 3rem;
+       }
+
+        & p{
+            text-align: left;
+            width: 100%;
+            font-size: 1.7rem;
+        }
+    }
+
+
+    .category-container{
+        & button{
+            width: 200px;
+            height: 60px;
+            font-size: 1.5rem;
+        }
+    }
+
+    .cards{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .single-card{
+        & img{
+            width: 300px;
+        }
+
+        & h2{
+            font-size: 24pt;
+        }
+
+        & p{
+            font-size: 16pt;
+        }
+    }
+
+    .support-container{
+        flex-direction: row;
+        & img{
+            display: inline-block;
+
+        }
+
+    
+    }
+
+    .footer{
+        flex-direction: row;
+        gap: 0rem;
+        margin-top: 10rem;
+        padding: 0;
+        width: 100%;
+    }
+}
+
+
